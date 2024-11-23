@@ -61,7 +61,7 @@ ${data.learn}
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Contributing](#contributing)
+- [Contributions](#contributions)
 - [Tests](#tests)
 - [Questions](#questions)
 
@@ -77,7 +77,7 @@ ${data.usage}
 
 ${renderLicenseSection(data.license)}
 
-## Contributing
+## Contributions
 
 ${data.contribution}
 
