@@ -50,8 +50,6 @@ function generateMarkdown(data) {
 
 ${data.motivation} 
 
-${data.build} 
-
 ${data.problem} 
 
 ${data.learn}
