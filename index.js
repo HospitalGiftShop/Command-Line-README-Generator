@@ -5,9 +5,9 @@ import generateMarkdown from "./utils/generateMarkdown.js";
 
 
 // TODO: Create an array of questions for user input
-const questions = ['What is your Project Title?', 'What was your motivation?', 'Why did you build this project?', 'What problem does it solve?', 'What did you learn?',
-    'What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.', 'Provide instructions and examples for use.',
-    'Select the type of license you would like for your project:', 'How can others contribute to the project?', 'What are the Test Instructions?',
+const questions = ['What is the name of your project?', 'What motivated you to build the project?', 'What problem does the application solve?', 'What did you learn?',
+    'What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.', 'How do you use the application?',
+    'Select the type of license you would like for your project:', 'Did anyone other than yourself contribute to the project?', 'What are the Test Instructions?',
     'What is your email address?', 'What is your GitHub profile?'];
 
 // TODO: Create a function to write README file
@@ -33,31 +33,26 @@ function init() {
         {
             type: "input",
             message: questions[2],
-            name: "build",
-        },
-        {
-            type: "input",
-            message: questions[3],
             name: "problem",
         },
         {
             type: "input",
-            message: questions[4],
+            message: questions[3],
             name: "learn",
         },
         {
             type: "input",
-            message: questions[5],
+            message: questions[4],
             name: "installation",
         },
         {
             type: "input",
-            message: questions[6],
+            message: questions[5],
             name: "usage",
         },
         {
             type: "list",
-            message: questions[7],
+            message: questions[6],
             choices: [
                 "MIT",
                 "Apache 2.0 License",
@@ -70,28 +65,29 @@ function init() {
         },
         {
             type: "input",
-            message: questions[8],
+            message: questions[7],
             name: "contribution",
         },
         {
             type: "input",
-            message: questions[9],
+            message: questions[8],
             name: "tests",
         },
         {
             type: "input",
-            message: questions[10],
+            message: questions[9],
             name: "email",
         },
         {
             type: "input",
-            message: questions[11],
+            message: questions[10],
             name: "github",
         }
     ])
         .then((data) =>
-            writeToFile('README.md', generateMarkdown(data)))
+            writeToFile('./README-Sample/README.md', generateMarkdown(data)))
 };
 // Function call to initialize app
 console.log('Welcome to the README Generator');
+console.log('You will be prompted with a series of questions.  Hit enter on your keyboard once you are ready to move to the next question.')
 init();
