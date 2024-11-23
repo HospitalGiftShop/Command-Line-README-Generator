@@ -2,6 +2,10 @@
 
   ![License: MIT](https://img.shields.io/badge/License-MIT-orange.svg)
 
+## Video on How to Use the Application
+
+[Video Demonstration](https://drive.google.com/file/d/1D81oyPdXQQl0aJej4O7UXEb8RnmaWPGt/view?usp=drive_link)
+
 ## Description
 
 This application was built to help developers quickly and easily generate a high quality README file so they can spend more time focusing on their project.
@@ -22,11 +26,13 @@ In creating this application, I learned how to install different packages using 
 ## Installation
 
 1. Open the command line and navigate to the location on your machine where you would like the application installed.
-2. Clone the repository in your command line by entering: git clone <https://github.com/HospitalGiftShop/Command-Line-README-Generator.git>
-![git clone](image.png)
+2. Clone the repository in your command line by entering: git clone
+![git clone](git-clone.png)
 3. Install Node.js (if not already installed).  Node.js will allow you to run the application directly in the command line. </br>
       [Node.js Website](https://nodejs.org/en) </br>
       [Node.js Package Manager](https://nodejs.org/en/download/package-manager)
+4. With Node installed, in the command line, enter: npm init -y.  This will initilize and create the package.json.
+5. Use the command line to install the inquirer package by entering: npm i inquirer.
 
 Optional:
 
@@ -36,7 +42,9 @@ You may also want to install and use a code editor such as [Visual Studio Code](
 
 In the command line, navigate (cd 'folder name') to the folder where the index.js file is located.  While still in the command line type: node index.js
 
-You will be prompted with a series of questions.  After you have completed your response to a question, simply press enter on your keyboard to move to the next question.  Once you have answered the final question you will be prompted with the message "Your README file has been created."  
+You will be prompted with a series of questions.  After you have completed your response to a question, simply press enter on your keyboard to move to the next question.  Once you have answered the final question you will be presented with the message "Your README file has been created."  
+
+![Command Line Prompts](command-line-prompts.png)
 
 ## License
 
