@@ -1,3 +1,4 @@
 node_modules/
 .DS_Store/
-.git-clone.png/
+git-clone.png/
+command-line-prompts.png/
